@@ -7,10 +7,11 @@ import { motion, useAnimate } from "framer-motion";
 import { MailIcon, MoonIcon, SunIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiLinkedin } from "react-icons/si";
 import { links } from "./links";
 import { config } from "@/config";
 import { getContactLink } from "../util/get-contact-link";
+import { link } from "fs";
 
 export default function Navbar() {
   const [isCompressed, setIsCompressed] = useState(false);
@@ -148,18 +149,23 @@ export default function Navbar() {
       >
         <div className="flex items-center gap-4" id="left-section">
           <Link href={"/"}>
-            {" "}
             <div
               className={cn(
-                "bg-red-900 bg-opacity-50 backdrop-blur-sm rounded-full size-[40px] flex items-center justify-center text-secondary relative overflow-clip",
+                "backdrop-blur-sm rounded-full size-[40px] flex items-center justify-center relative overflow-hidden",
                 isCompressed && "size-[30px]"
               )}
               id="companyLogo"
-            ></div>
+            >
+              <img
+                src="/kathedra_logo.jpeg"
+                alt="Kathedra Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </Link>
 
           <motion.span className={cn(isCompressed && "")} id="companyName">
-            with{" "}
+            Build with{" "}
             <motion.span className="font-bold not-italic">
               {config.name}
             </motion.span>
@@ -174,7 +180,7 @@ export default function Navbar() {
         >
           <motion.ul
             className={cn(
-              "flex gap-8 ",
+              "flex gap-8 whitespace-nowrap ",
               isCompressed && "gap-4 ",
               isCompressed
                 ? "dark:text-primary text-background"
@@ -188,31 +194,28 @@ export default function Navbar() {
             ))}
           </motion.ul>
         </div>
-        <div
-          className={cn("flex justify-end items-center gap-4")}
-          id="right-section"
-        >
-          <MailIcon
+        <div className={cn("flex justify-end items-center gap-4")} id="right-section">
+          {/* <MailIcon
             className={cn(
-              "size-4 inline ",
+              "size-4 inline cursor-pointer hover:text-gray-400 transition-colors",
               !isCompressed && "",
               isCompressed && "text-white"
             )}
             onClick={() => {
-              const link = getContactLink();
-              window.open(link, "_blank");
+              const link = getContactLink("Contact Inquiry", "");
+              window.location.href = link;
             }}
-          />
+          /> */}
           {!isCompressed && (
             <div className="flex justify-center items-center w-fit">
               <div className="md:flex gap-4 hidden mr-4">
-                <Link
+                {/* <Link
                   href={config.social.github.url}
                   target="_blank"
                   aria-label={config.social.github.ariaLabel}
                 >
                   <SiGithub className="hover:text-gray-400 transition-colors size-5" />
-                </Link>
+                </Link> */}
                 <Link
                   href={config.social.linkedin.url}
                   target="_blank"

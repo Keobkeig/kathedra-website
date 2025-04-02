@@ -47,7 +47,7 @@ export default function MobileNavbar() {
       >
         <div className="flex items-center gap-2">
           <motion.span className={cn(hasScrolled && "")} id="companyName">
-            with{" "}
+            Build with{" "}
             <motion.span className="font-bold not-italic">
               {config.name}
             </motion.span>

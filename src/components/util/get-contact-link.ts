@@ -1,5 +1,5 @@
 export const getContactLink = (subject?: string, message?: string) => {
-    const email = "neel@neel.com";
+    const email = "info@kathedra.co";
     let mailtoLink = `mailto:${email}`;
 
     const params = new URLSearchParams();

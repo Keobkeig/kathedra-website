@@ -7,7 +7,7 @@ export type SocialLink = {
 };
 
 export type SocialLinks = {
-  github: SocialLink;
+  // github: SocialLink;
   linkedin: SocialLink;
   // Extendable - add more social links here as needed
 };
@@ -81,11 +81,11 @@ export type Config = {
   };
   social: SocialLinks;
   projects: Project[];
-  education: {
-    items: Education[];
-    title: string;
-    subtitle: string;
-  };
+  // education: {
+  //   items: Education[];
+  //   title: string;
+  //   subtitle: string;
+  // };
   skills: {
     items: Skills[];
     title: ReactNode;
@@ -104,20 +104,20 @@ export type Config = {
 
 // Configuration
 export const config: Config = {
-  name: "Neel",
-  contactEmail: "neel@neel.com",
+  name: "Kathedra",
+  contactEmail: "ochasan@kathedra.co",
   hero: {
-    title: "Hi, I'm Neel",
-    subtitle: "I build things that are insanely great",
+    title: "Kathedra",
+    subtitle: "the future of lived design",
     backgroundImage: "/hero.png",
   },
   social: {
-    github: {
-      url: "https://github.com/stevejobs",
-      ariaLabel: "GitHub",
-    },
+    // github: {
+    //   url: "https://github.com/stevejobs",
+    //   ariaLabel: "GitHub",
+    // },
     linkedin: {
-      url: "https://linkedin.com/in/stevejobs",
+      url: "https://linkedin.com/company/kathedra",
       ariaLabel: "LinkedIn",
     },
   },
@@ -128,10 +128,10 @@ export const config: Config = {
       subtitle: "Lead Developer & CEO",
       description: "Created the world's first mobile web browser that actually works. No Flash needed!",
       bullets: [
-        "Convinced everyone that pinch-to-zoom was totally my idea",
-        "Implemented the 'magical' scroll bounce effect using CSS",
-        "Refused to add a back button because users don't need choices",
-        "Spent 6 months perfecting the border radius of buttons"
+        // "Convinced everyone that pinch-to-zoom was totally my idea",
+        // "Implemented the 'magical' scroll bounce effect using CSS",
+        // "Refused to add a back button because users don't need choices",
+        // "Spent 6 months perfecting the border radius of buttons"
       ],
       company: "Apple Inc.",
       image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3",
@@ -264,82 +264,82 @@ export const config: Config = {
       isPersonalProject: true
     }
   ],
-  education: {
-    items: [
-      {
-        school: "Reed College",
-        degree: "Dropped Out",
-        startDate: "1972",
-        endDate: "1974",
-        description: "Studied calligraphy and eastern philosophy before dropping out. Later credited this experience with inspiring Apple's typography.",
-        logo: "https://images.unsplash.com/photo-1618790067848-8d6401a38bf5?ixlib=rb-4.0.3",
-        grades: [
-          {
-            subject: "Calligraphy",
-            grade: "A+",
-            year: "1972"
-          },
-          {
-            subject: "Eastern Philosophy",
-            grade: "A",
-            year: "1973"
-          },
-          {
-            subject: "Typography Design",
-            grade: "A+",
-            year: "1973"
-          }
-        ]
-      }, 
-      {
-        school: "Stanford University",
-        degree: "Dropped Out",
-        startDate: "1972",
-        endDate: "1974",
-        description: "Studied calligraphy and eastern philosophy before dropping out. Later credited this experience with inspiring Apple's typography.",
-        logo: "https://images.unsplash.com/photo-1618790067848-8d6401a38bf5?ixlib=rb-4.0.3",
-        grades: [
-          {
-            subject: "Computer Science",
-            grade: "A",
-            year: "1972"
-          },
-          {
-            subject: "Design Thinking",
-            grade: "A+",
-            year: "1973"
-          },
-          {
-            subject: "Innovation",
-            grade: "A+",
-            year: "1974"
-          }
-        ]
-      }
-    ],
-    title: "Education Journey",
-    subtitle: "The foundation of my knowledge and experiences"
-  },
+  // education: {
+  //   items: [
+  //     {
+  //       school: "Reed College",
+  //       degree: "Dropped Out",
+  //       startDate: "1972",
+  //       endDate: "1974",
+  //       description: "Studied calligraphy and eastern philosophy before dropping out. Later credited this experience with inspiring Apple's typography.",
+  //       logo: "https://images.unsplash.com/photo-1618790067848-8d6401a38bf5?ixlib=rb-4.0.3",
+  //       grades: [
+  //         {
+  //           subject: "Calligraphy",
+  //           grade: "A+",
+  //           year: "1972"
+  //         },
+  //         {
+  //           subject: "Eastern Philosophy",
+  //           grade: "A",
+  //           year: "1973"
+  //         },
+  //         {
+  //           subject: "Typography Design",
+  //           grade: "A+",
+  //           year: "1973"
+  //         }
+  //       ]
+  //     }, 
+  //     {
+  //       school: "Stanford University",
+  //       degree: "Dropped Out",
+  //       startDate: "1972",
+  //       endDate: "1974",
+  //       description: "Studied calligraphy and eastern philosophy before dropping out. Later credited this experience with inspiring Apple's typography.",
+  //       logo: "https://images.unsplash.com/photo-1618790067848-8d6401a38bf5?ixlib=rb-4.0.3",
+  //       grades: [
+  //         {
+  //           subject: "Computer Science",
+  //           grade: "A",
+  //           year: "1972"
+  //         },
+  //         {
+  //           subject: "Design Thinking",
+  //           grade: "A+",
+  //           year: "1973"
+  //         },
+  //         {
+  //           subject: "Innovation",
+  //           grade: "A+",
+  //           year: "1974"
+  //         }
+  //       ]
+  //     }
+  //   ],
+  //   title: "Education Journey",
+  //   subtitle: "The foundation of my knowledge and experiences"
+  // },
   skills: {
     items: [
       {
-        title: "Full Stack Development",
-        description: "Proficient in both frontend and backend development",
+        title: "6 DOF Arm",
+        description: "Experience in designing and building robotic arms",
         icon: <Laptop />
     },
     {
-      title: "Frontend Engineering", 
-      description: "Expertise in building user-friendly interfaces",
+      title: "AI and Computer Vision Software", 
+      description: "Experience in developing AI and computer vision software",
       icon: <Monitor />
     },
     {
-      title: "Backend Architecture",
-      description: "Strong foundation in server-side development and system design", 
+      title: "Automation of Industrial Processes",
+      description: "Experience in automating industrial processes", 
       icon: <Database />
     }, 
   ],
-    title:<>What I bring <br className=" sm:hidden"/> to the table</>,
-    description: "Proficient in both frontend and backend development",
+    title:<>What we <br className=" sm:hidden"/> to the table</>,
+    description: "AI and Robotics are transforming how the world builds, operates, and maintains its most critical infrastructure for a more reliable and sustainable future.",
   },
 
   testimonials: {
@@ -380,10 +380,10 @@ export const config: Config = {
     subtitle: "This is what the peeps say about me"
   },
   contact: {
-    title: "Let's Connect",
-    subtitle: "I'm always looking for new challenges and opportunities to grow. Let's connect and see how we can make something great together.",
+    title: "Interested in our products?",
+    subtitle: "Let's talk about how we can help you",
     buttonText: "Contact Me",
-    buttonLink: "mailto:neel@neel.com"
+    buttonLink: "mailto:ochasan@kathedra.co"
   }
 
 };

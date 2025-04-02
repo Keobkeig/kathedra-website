@@ -24,9 +24,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: `${config.name} | Full Stack Developer & Machine Learning Engineer`,
+  title: `${config.name} | ${config.hero.subtitle}`,
   description:
-    "I'm a full stack developer and machine learning engineer with a passion for building delightful software.",
+    "Automating the future of luxury furniture manufauturing with robotics",
 };
 
 export default function RootLayout({

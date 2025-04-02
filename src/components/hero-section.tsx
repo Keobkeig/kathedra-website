@@ -43,7 +43,7 @@ export default function HeroSection() {
                 </div>
                 <section>
                     <div className="relative pt-24 md:pt-36">
-                        <AnimatedGroup
+                        {/* <AnimatedGroup
                             variants={{
                                 container: {
                                     visible: {
@@ -76,15 +76,15 @@ export default function HeroSection() {
                                 width="3276"
                                 height="4095"
                             />
-                        </AnimatedGroup>
+                        </AnimatedGroup> */}
                         <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
                         <div className="mx-auto max-w-7xl px-6">
                             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                                 <AnimatedGroup variants={transitionVariants}>
                                     <Link
-                                        href="https://apple.com"
+                                        href="https://www.linkedin.com/company/kathedra/"
                                         className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
-                                        <span className="text-foreground text-sm">Checkout my latest project</span>
+                                        <span className="text-foreground text-sm">See what we're working on</span>
                                         <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
                                         <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
@@ -117,7 +117,7 @@ export default function HeroSection() {
                                     {config.hero.subtitle}
                                 </TextEffect>
 
-                                <AnimatedGroup
+                                {/* <AnimatedGroup
                                     variants={{
                                         container: {
                                             visible: {
@@ -129,8 +129,8 @@ export default function HeroSection() {
                                         },
                                         ...transitionVariants,
                                     }}
-                                    className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
-                                    <div
+                                    className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"> */}
+                                    {/* <div
                                         key={1}
                                         className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5">
                                         <Button
@@ -143,18 +143,8 @@ export default function HeroSection() {
                                                 </span>
                                             </Link>
                                         </Button>
-                                    </div>
-                                    <Button
-                                        key={2}
-                                        asChild
-                                        size="lg"
-                                        variant="ghost"
-                                        className="h-10.5 rounded-xl px-5">
-                                        <Link href="/contact">
-                                            <span className="text-nowrap">Reach out</span>
-                                        </Link>
-                                    </Button>
-                                </AnimatedGroup>
+                                    </div> */}
+                                {/* </AnimatedGroup> */}
                             </div>
                         </div>
 
@@ -201,7 +191,7 @@ export default function HeroSection() {
                             <Link
                                 href="/"
                                 className="block text-sm duration-150 hover:opacity-75">
-                                <span> Meet Our Customers</span>
+                                <span> Meet Our Clients</span>
 
                                 <ChevronRight className="ml-1 inline-block size-3" />
                             </Link>

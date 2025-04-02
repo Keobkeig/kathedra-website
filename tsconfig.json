@@ -34,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/navbar/links.tx"
-  ],
+, "src/app/api/send-email/route.js"  ],
   "exclude": [
     "node_modules"
   ]
