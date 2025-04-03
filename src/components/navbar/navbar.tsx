@@ -224,13 +224,13 @@ export default function Navbar() {
                   <SiLinkedin className="hover:text-blue-400 transition-colors size-5" />
                 </Link>
               </div>
-              <button onClick={toggleTheme}>
+              {/* <button onClick={toggleTheme}>
                 {theme === "light" ? (
                   <MoonIcon className="size-6" />
                 ) : (
                   <SunIcon className="size-6" />
                 )}
-              </button>
+              </button> */}
             </div>
           )}
         </div>

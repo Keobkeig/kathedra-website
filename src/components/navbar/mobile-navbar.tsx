@@ -94,7 +94,7 @@ export default function MobileNavbar() {
                     Book a Call <Phone className="size-4" />
                   </Button>
 
-                  <span
+                  {/* <span
                     className="bg-transparent w-fit text-foreground text-xs"
                     onClick={toggleTheme}
                   >
@@ -106,7 +106,7 @@ export default function MobileNavbar() {
                         <Moon className="inline size-4" />
                       )}
                     </div>
-                  </span>
+                  </span> */}
                 </div>
               </div>
             </DrawerContent>

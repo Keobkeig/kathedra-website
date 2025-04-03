@@ -42,7 +42,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="w-screen  dark" suppressHydrationWarning>
+    <html lang="en" className="w-screen  light" suppressHydrationWarning>
       <ReactLenis root options={lenisOptions}>
         <ThemeProvider>
           <body
