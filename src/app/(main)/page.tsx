@@ -12,8 +12,8 @@ export default function Home() {
         {/* <RobotArm/> */}
         <HeroSection />
         <Skills />
-        {/* <Experience />
-        {/* <Education/>  */}
+        {/* {/* <Experience /> */}
+        <Education/> 
         {/* <RobotArm /> */}
         <Testimonials/>
         <CallToAction/> 

@@ -47,10 +47,12 @@ export default function MobileNavbar() {
       >
         <div className="flex items-center gap-2">
           <motion.span className={cn(hasScrolled && "")} id="companyName">
-            Build with{" "}
-            <motion.span className="font-bold not-italic">
-              {config.name}
-            </motion.span>
+            <span className="text-2xl"> 
+              Build with{" "}
+              <motion.span className="font-bold not-italic">
+                {config.name}
+              </motion.span>
+            </span>
           </motion.span>
         </div>
 
@@ -68,13 +70,13 @@ export default function MobileNavbar() {
                 <div className="flex gap-16 h-fit text-sm">
                   <motion.ul
                     className={cn(
-                      "flex flex-col gap-8 text-xl text-muted-foreground font-bold"
+                      "flex flex-col gap-8 text-3xl text-muted-foreground font-bold" 
                     )}
                   >
                     {links.map((link) => (
                       <li key={link.href}>
                         <span
-                          className="cursor-pointer flex items-center gap-2"
+                          className="cursor-pointer flex items-center gap-4" 
                           onClick={(e) =>
                             handleLinkClick(e, () => {
                               window.location.href = link.href;
@@ -90,8 +92,8 @@ export default function MobileNavbar() {
                 </div>
 
                 <div className="flex flex-col justify-center gap-4 mt-8 w-full">
-                  <Button className="rounded-full max-w-[300px]">
-                    Book a Call <Phone className="size-4" />
+                  <Button className="rounded-full max-w-[300px] text-xl py-6"> {/* increased text and padding */}
+                    Book a Call <Phone className="size-6" /> {/* increased icon size */}
                   </Button>
 
                   {/* <span

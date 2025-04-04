@@ -10,7 +10,7 @@ export default function RobotArm() {
         strategy="beforeInteractive"
       />
       <spline-viewer 
-        url="https://prod.spline.design/aEKld85Z3DRWx9s6/scene.splinecode"
+        url="https://prod.spline.design/1TKQs0qFXZ8l8dRH/scene.splinecode"
         className="w-full h-[calc(100%+60px)] -mb-[60px]"
         background="#ffffff"
         camera-orbit="-30deg 60deg 6m"

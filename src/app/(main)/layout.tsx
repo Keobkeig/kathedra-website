@@ -12,15 +12,9 @@ import Footer from "@/components/footer";
 
 
 import { config } from "@/config";
-const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const exo = localFont({
+  src: "../fonts/Exo.woff2",
+  variable: "--font-exo",
 });
 
 export const metadata: Metadata = {
@@ -42,11 +36,11 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="w-screen  light" suppressHydrationWarning>
+    <html lang="en" className={`w-screen light ${exo.variable}`} suppressHydrationWarning>
       <ReactLenis root options={lenisOptions}>
         <ThemeProvider>
           <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased relative w-full h-fit   `}
+            className={`antialiased relative w-full h-fit font-[Exo]`}
           >
             <Navbar />
             <MobileNavbar />

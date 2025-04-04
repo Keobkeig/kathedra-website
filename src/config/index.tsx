@@ -107,7 +107,7 @@ export const config: Config = {
   name: "Kathedra",
   contactEmail: "ochasan@kathedra.co",
   hero: {
-    title: "Kathedra",
+    title: "making the first upholstering robot",
     subtitle: "the future of lived design",
     backgroundImage: "/hero.png",
   },
@@ -146,244 +146,69 @@ export const config: Config = {
         href: "https://www.apple.com/iphone"
       }
     },
-    {
-      title: "NeXT Framework",
-      subtitle: "Solo Developer",
-      description: "Built an entire operating system because I was fired and needed something to do",
-      bullets: [
-        "Wrote the most beautiful object-oriented code ever seen",
-        "Made everything a perfect cube shape because why not",
-        "Charged $10,000 per license because good code isn't cheap",
-        "Created WebObjects - the framework nobody asked for but got anyway"
-      ],
-      company: "NeXT Computer",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3",
-      tags: ["Objective-C", "Unix", "WebObjects", "Expensive"],
-      position: "Founder & Lead Developer",
-      location: "Redwood City, CA",
-      type: "fulltime",
-      startDate: "1985",
-      endDate: "1997",
-      isPersonalProject: true
-    },
-    {
-      title: "Pixar Rendering Engine",
-      subtitle: "Technical Advisor",
-      description: "Invested in and guided the development of revolutionary 3D rendering software",
-      bullets: [
-        "Convinced artists that waiting 24 hours for a render is 'part of the creative process'",
-        "Implemented the 'money burning' algorithm to keep things interesting",
-        "Successfully rendered Woody's hat after only 3 server crashes",
-        "Made sure every pixel was perfectly aligned with the golden ratio"
-      ],
-      company: "Pixar",
-      image: "https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?ixlib=rb-4.0.3",
-      tags: ["C++", "OpenGL", "Animation", "Bankruptcy Risk"],
-      position: "Investment Debugger",
-      location: "Emeryville, CA",
-      type: "contract",
-      startDate: "1986",
-      endDate: "2006"
-    },
-    {
-      title: "Apple II Terminal",
-      subtitle: "Junior Developer",
-      description: "My first coding project where I learned that GUI is everything",
-      bullets: [
-        "Convinced Wozniak that my 5 lines of code were essential",
-        "Designed a terminal that only displays fonts I approved",
-        "Created the first skeuomorphic command line interface",
-        "Implemented revolutionary CAPS LOCK feature"
-      ],
-      company: "Apple Computer",
-      image: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?ixlib=rb-4.0.3",
-      tags: ["BASIC", "Assembly", "Marketing"],
-      position: "Interface Perfectionist",
-      location: "Garage, CA",
-      type: "internship",
-      startDate: "1976",
-      endDate: "1977"
-    },
-    {
-      title: "Atari Breakout",
-      subtitle: "Freelance Developer",
-      description: "Optimized game code by outsourcing all work to Wozniak",
-      bullets: [
-        "Reduced code by telling Woz to do it in fewer lines",
-        "Achieved maximum efficiency through delegation",
-        "Won bonus by splitting it unfairly",
-        "Pioneered the 'take credit for others' work' methodology"
-      ],
-      company: "Atari",
-      image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3",
-      tags: ["Assembly", "Game Dev", "Delegation"],
-      position: "Project Manager",
-      location: "Los Gatos, CA",
-      type: "freelance",
-      startDate: "1974",
-      endDate: "1975"
-    },
-    {
-      title: "Reed College Calligraphy API",
-      subtitle: "Dropout Developer",
-      description: "Created an API for converting boring fonts into beautiful typography",
-      bullets: [
-        "Developed while officially dropping out",
-        "Created first recursive font-loading algorithm",
-        "Implemented meditation-driven development",
-        "Pioneered the 'fonts are more important than food' philosophy"
-      ],
-      company: "Reed College",
-      image: "https://images.unsplash.com/photo-1618790067848-8d6401a38bf5?ixlib=rb-4.0.3",
-      tags: ["Typography", "Python", "Zen"],
-      position: "Typography Engineer",
-      location: "Portland, OR",
-      type: "freelance",
-      startDate: "1972",
-      endDate: "1974",
-      isPersonalProject: true
-    },
-    {
-      title: "Blue Box Project",
-      subtitle: "Teenage Hacker",
-      description: "Built devices to make free long-distance calls using totally legal methods",
-      bullets: [
-        "Reverse engineered telephone systems with a whistle from Captain Crunch",
-        "Implemented first peer-to-peer communication network (aka phone phreaking)",
-        "Created MVP (Minimum Viable Phreaking) methodology",
-        "Achieved 2600Hz precision without formal engineering education"
-      ],
-      company: "Self-Employed",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3",
-      tags: ["Hardware", "Phreaking", "Telecommunications"],
-      position: "Chief Phreaking Officer",
-      location: "Los Altos, CA",
-      type: "freelance",
-      startDate: "1971",
-      endDate: "1972",
-      isPersonalProject: true
-    }
   ],
-  // education: {
-  //   items: [
-  //     {
-  //       school: "Reed College",
-  //       degree: "Dropped Out",
-  //       startDate: "1972",
-  //       endDate: "1974",
-  //       description: "Studied calligraphy and eastern philosophy before dropping out. Later credited this experience with inspiring Apple's typography.",
-  //       logo: "https://images.unsplash.com/photo-1618790067848-8d6401a38bf5?ixlib=rb-4.0.3",
-  //       grades: [
-  //         {
-  //           subject: "Calligraphy",
-  //           grade: "A+",
-  //           year: "1972"
-  //         },
-  //         {
-  //           subject: "Eastern Philosophy",
-  //           grade: "A",
-  //           year: "1973"
-  //         },
-  //         {
-  //           subject: "Typography Design",
-  //           grade: "A+",
-  //           year: "1973"
-  //         }
-  //       ]
-  //     }, 
-  //     {
-  //       school: "Stanford University",
-  //       degree: "Dropped Out",
-  //       startDate: "1972",
-  //       endDate: "1974",
-  //       description: "Studied calligraphy and eastern philosophy before dropping out. Later credited this experience with inspiring Apple's typography.",
-  //       logo: "https://images.unsplash.com/photo-1618790067848-8d6401a38bf5?ixlib=rb-4.0.3",
-  //       grades: [
-  //         {
-  //           subject: "Computer Science",
-  //           grade: "A",
-  //           year: "1972"
-  //         },
-  //         {
-  //           subject: "Design Thinking",
-  //           grade: "A+",
-  //           year: "1973"
-  //         },
-  //         {
-  //           subject: "Innovation",
-  //           grade: "A+",
-  //           year: "1974"
-  //         }
-  //       ]
-  //     }
-  //   ],
-  //   title: "Education Journey",
-  //   subtitle: "The foundation of my knowledge and experiences"
-  // },
   skills: {
     items: [
       {
-        title: "6 DOF Arm",
-        description: "Experience in designing and building robotic arms",
+        title: "Better Jobs",
+        description: "reducing worker strain and injury and enabling creative work",
         icon: <Laptop />
     },
     {
-      title: "AI and Computer Vision Software", 
-      description: "Experience in developing AI and computer vision software",
+      title: "Cut Costs", 
+      description: "by reducing delays and lead times",
       icon: <Monitor />
     },
     {
-      title: "Automation of Industrial Processes",
-      description: "Experience in automating industrial processes", 
+      title: "Generate Revenue",
+      description: "by competing with off-shored labor and producing new products", 
       icon: <Database />
     }, 
   ],
-    title:<>What we <br className=" sm:hidden"/> to the table</>,
-    description: "AI and Robotics are transforming how the world builds, operates, and maintains its most critical infrastructure for a more reliable and sustainable future.",
+    title:<>revolutionizing furniture manufacturing with the first upholstery robot</>,
+    description: <><b>the first automation system</b> to eliminate manual upholstering stretching, gluing, and tacking</>,
   },
 
   testimonials: {
     items: [
       {
-        name: "Tim Cook",
-        image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3",
-        quote: "His attention to detail and innovative thinking transformed our entire approach to product design. The results speak for themselves.", 
-        company: "Apple Inc."
+        name: "Oliver Davila Chasan, Founder",
+        image: "/team/oliver.png",
+        quote: "Deep Tech investing @ HAX\nVC investing @ Triatomic\nBA Economics @ NYU",
+        company: "Business Development"
       },
       {
-        name: "Bill Gates",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
-        quote: "Even though we were competitors, I always admired his vision and dedication to creating insanely great products that changed the world.",
-        company: "Microsoft"
+        name: "David Michael Faes, Founder",
+        image: "/team/david.png",
+        quote: "AI/ML @ Lockheed Martin\nFirst employee @ Silana Robotics\nBA Computer Science @ Columbia",
+        company: "Product Development"
       },
       {
-        name: "Jony Ive",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3",
-        quote: "Working together, we pushed the boundaries of what was possible in industrial design. His perfectionism was infectious.",
-        company: "LoveFrom"
+        name: "Alison Bartsch, PhD",
+        image: "/team/alison.png",
+        quote: "Researcher @ CMU, Mechanical AI, Stanford Autonomous Labs\nPhD Mech E @ Carnegie Mellon\n14 articles on Deformable Materials",
+        company: "Robotics/AI Engineer"
       },
       {
-        name: "Larry Ellison",
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3",
-        quote: "A true visionary who saw possibilities where others saw limitations. His influence on Silicon Valley cannot be overstated.",
-        company: "Oracle"
+        name: "Jordan Zeeb, MSc",
+        image: "/team/jordan.png",
+        quote: "Mechatronics @ GoogleX, Zebra\nR&D Engineer @ SandboxAQ\nMSc Robotics @ Northwestern U",
+        company: "Mechatronics Engineer"
       },
       {
-        name: "Wozniak",
-        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3",
-        quote: "We started in a garage and ended up changing the world. His marketing genius and my technical skills were the perfect combination.",
-        company: "Apple Co-founder"
-      },
-     
+        name: "Kyle Cash",
+        image: "/team/kyle.png",
+        quote: "Consultant @ K9Kyle\nBSc Mech E @ Columbia\nBA Physics @ Adelphi",
+        company: "Mechanical Engineer"
+      }
     ],
-    title: "Kind Words",
-    subtitle: "This is what the peeps say about me"
+    title: "Kathedra's Team",
+    subtitle: "Meet our talented team of experts"
   },
-  contact: {
-    title: "Interested in our products?",
-    subtitle: "Let's talk about how we can help you",
-    buttonText: "Contact Me",
-    buttonLink: "mailto:ochasan@kathedra.co"
-  }
-
+contact: {
+  title: "Interested in our products?",
+  subtitle: "Let's talk about how we can help you",
+  buttonText: "Contact Me",
+  buttonLink: "mailto:info@kathedra.co"
+}
 };

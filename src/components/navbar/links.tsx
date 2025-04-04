@@ -15,17 +15,12 @@ interface Link {
 
 export const links: Link[] = [
   // {
-  //   name: "Simple",
-  //   href: "/simple",
-  //   icon: <HomeIcon className="size-4" />,
-  // },
-  // {
   //   name: "Experience",
   //   href: "#experience",
   //   icon: <BriefcaseIcon className="size-4" />,
   // },
   {
-    name: "Skills",
+    name: "solutions",
     href: "#skills",
     icon: <WrenchIcon className="size-4" />,
   },
@@ -35,12 +30,12 @@ export const links: Link[] = [
   //   icon: <GraduationCapIcon className="size-4" />,
   // },
   {
-    name: "Testimonials",
-    href: "#testimonials",
+    name: "our team",
+    href: "#team",
     icon: <MessageSquareIcon className="size-4" />,
   },
   {
-    name: "Contact Us",
+    name: "contact us",
     href: "#contact",
     icon: <MailIcon className="size-4" />,
   }

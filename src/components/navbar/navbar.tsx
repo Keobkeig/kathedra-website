@@ -127,7 +127,7 @@ export default function Navbar() {
 
     if (isCompressed) animateCompressed();
     else animateExpanded();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [isCompressed]);
 
   return (
@@ -165,22 +165,24 @@ export default function Navbar() {
           </Link>
 
           <motion.span className={cn(isCompressed && "")} id="companyName">
-            Build with{" "}
-            <motion.span className="font-bold not-italic">
-              {config.name}
-            </motion.span>
+            <span className="text-2xl"> 
+              Build with{" "}
+              <motion.span className="font-bold not-italic">
+                {config.name}
+              </motion.span>
+            </span>
           </motion.span>
         </div>
 
         <div
           className={cn(
-            " justify-center gap-4 max-md:hidden mx-auto my-auto  w-fit h-fit text-sm ",
+            " justify-center gap-4 max-md:hidden mx-auto my-auto  w-fit h-fit ", 
             !isCompressed && "left-1/2 absolute -translate-x-1/2 py-4"
           )}
         >
           <motion.ul
             className={cn(
-              "flex gap-8 whitespace-nowrap ",
+              "flex gap-8 whitespace-nowrap ", // added text-xl
               isCompressed && "gap-4 ",
               isCompressed
                 ? "dark:text-primary text-background"
@@ -195,27 +197,11 @@ export default function Navbar() {
           </motion.ul>
         </div>
         <div className={cn("flex justify-end items-center gap-4")} id="right-section">
-          {/* <MailIcon
-            className={cn(
-              "size-4 inline cursor-pointer hover:text-gray-400 transition-colors",
-              !isCompressed && "",
-              isCompressed && "text-white"
-            )}
-            onClick={() => {
-              const link = getContactLink("Contact Inquiry", "");
-              window.location.href = link;
-            }}
-          /> */}
+   
           {!isCompressed && (
             <div className="flex justify-center items-center w-fit">
               <div className="md:flex gap-4 hidden mr-4">
-                {/* <Link
-                  href={config.social.github.url}
-                  target="_blank"
-                  aria-label={config.social.github.ariaLabel}
-                >
-                  <SiGithub className="hover:text-gray-400 transition-colors size-5" />
-                </Link> */}
+        
                 <Link
                   href={config.social.linkedin.url}
                   target="_blank"
