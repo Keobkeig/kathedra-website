@@ -9,7 +9,7 @@ import "../globals.css";
 import Navbar from "@/components/navbar/navbar";
 import MobileNavbar from "@/components/navbar/mobile-navbar";
 import Footer from "@/components/footer";
-
+import { Analytics } from "@vercel/analytics/react"
 
 import { config } from "@/config";
 const exo = localFont({
@@ -48,9 +48,11 @@ export default function RootLayout({
             {children}
             <GoBackUp />
             <Footer />
+            <Analytics />
           </body>
         </ThemeProvider>
       </ReactLenis>
+
     </html>
   );
 }
