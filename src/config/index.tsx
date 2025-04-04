@@ -36,18 +36,9 @@ export interface Project {
   isPersonalProject?: boolean;
 }
 
-export interface Education {
-  school: string;
-  degree: string;
-  startDate: string;
-  endDate: string;
+export interface Problem {
+  title: string;
   description: string;
-  logo: string;
-  grades?: {
-    subject: string;
-    grade: string;
-    year: string;
-  }[];
 }
 
 
@@ -81,11 +72,11 @@ export type Config = {
   };
   social: SocialLinks;
   projects: Project[];
-  // education: {
-  //   items: Education[];
-  //   title: string;
-  //   subtitle: string;
-  // };
+  problems: {
+    items: Problem[];
+    title: string;
+    subtitle: string;
+  };
   skills: {
     items: Skills[];
     title: ReactNode;
@@ -147,21 +138,43 @@ export const config: Config = {
       }
     },
   ],
+  problems: {
+    items: [
+      {
+        title: "100% Manual Process",
+        description: "Upholstery remains entirely manual, requiring hours of physically demanding work that leads to chronic injuries and early retirement."
+      },
+      {
+        title: "Costly Training Burden",
+        description: "Training new upholsterers costs $100,000 and takes three years, creating severe production bottlenecks for manufacturers."
+      },
+      {
+        title: "Workforce Crisis",
+        description: "80% of manufacturers face labor shortages, with 48% of Gen Z avoiding the industry due to physical demands and limited growth."
+      },
+      {
+        title: "Industry Survival",
+        description: "With rising costs and shrinking workforce, American furniture manufacturing risks decline, threatening the future of quality craftsmanship."
+      },
+    ],
+    title: "Industry Challenges",
+    subtitle: "Critical issues facing furniture manufacturing"
+  },
   skills: {
     items: [
       {
-        title: "Better Jobs",
-        description: "reducing worker strain and injury and enabling creative work",
+        title: "AI-Driven Automation",
+        description: "Computer vision and deep learning predict fabric behavior, adapting to new materials and designs in real-time",
         icon: <Laptop />
     },
     {
-      title: "Cut Costs", 
-      description: "by reducing delays and lead times",
+      title: "Purpose-Built Solution", 
+      description: "Developed with manufacturers and designers to handle high-variety custom orders",
       icon: <Monitor />
     },
     {
-      title: "Generate Revenue",
-      description: "by competing with off-shored labor and producing new products", 
+      title: "Competitive Edge",
+      description: "Enable faster, adaptable production to compete with offshore manufacturing", 
       icon: <Database />
     }, 
   ],

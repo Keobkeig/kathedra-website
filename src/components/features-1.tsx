@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import { config } from '@/config'
 import HeaderTitle from './util/header-title'
 
-export default function Skills() {
+export default function Features() {
     return (
         <section className="bg-zinc-50 py-16 md:py-32 dark:bg-transparent w-full" id="skills">
             <div className=" mx-auto max-w-5xl px-6">

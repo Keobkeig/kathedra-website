@@ -2,19 +2,18 @@
 import { Experience } from "@/components/experience";
 import Skills from "@/components/features-1";
 import HeroSection from "@/components/hero-section";
-import { Education } from "@/components/education";
+import { Problem } from "@/components/education";
 import Testimonials from "@/components/testimonials";
 import CallToAction from "@/components/call-to-action";
-import RobotArm from "@/components/robot-arm";
+import { Companies } from "@/components/companies";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center  ">
-        {/* <RobotArm/> */}
         <HeroSection />
+        <Problem/>
         <Skills />
         {/* {/* <Experience /> */}
-        <Education/> 
-        {/* <RobotArm /> */}
+        <Companies/> 
         <Testimonials/>
         <CallToAction/> 
 

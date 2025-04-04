@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { config } from '@/config'
 import HeaderTitle from './util/header-title'
 
-export default function Testimonials() {
+export default function Team() {
     return (
         <section className="py-16 md:py-32" id="testimonials">
             <div className="mx-auto max-w-6xl px-6 md:space-y-16">
