@@ -47,7 +47,7 @@ export default function RootLayout({
             <ScrollToHash />
             {children}
             <GoBackUp />
-            <Footer />
+            {/* <Footer /> */}
             <Analytics />
           </body>
         </ThemeProvider>

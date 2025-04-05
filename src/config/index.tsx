@@ -141,20 +141,16 @@ export const config: Config = {
   problems: {
     items: [
       {
-        title: "100% Manual Process",
-        description: "Upholstery remains entirely manual, requiring hours of physically demanding work that leads to chronic injuries and early retirement."
+        title: "Global Labor Shortage",
+        description: "80% of manufacturers can't find enough workers.",
       },
       {
-        title: "Costly Training Burden",
-        description: "Training new upholsterers costs $100,000 and takes three years, creating severe production bottlenecks for manufacturers."
+        title: "Physically Strenuous Work",
+        description: "48 percent of Gen Z workers intend to leave within three to six months, citing physical stress.",
       },
       {
-        title: "Workforce Crisis",
-        description: "80% of manufacturers face labor shortages, with 48% of Gen Z avoiding the industry due to physical demands and limited growth."
-      },
-      {
-        title: "Industry Survival",
-        description: "With rising costs and shrinking workforce, American furniture manufacturing risks decline, threatening the future of quality craftsmanship."
+        title: "Supply Chain Disruption",
+        description: "50% tariffs on furniture imports",
       },
     ],
     title: "Industry Challenges",
@@ -163,23 +159,23 @@ export const config: Config = {
   skills: {
     items: [
       {
+        title: "Purpose-Built Solution",
+        description: "Developed with manufacturers and designers to handle high-variety custom orders",
+        icon: <Monitor />
+      },
+      {
         title: "AI-Driven Automation",
         description: "Computer vision and deep learning predict fabric behavior, adapting to new materials and designs in real-time",
         icon: <Laptop />
-    },
-    {
-      title: "Purpose-Built Solution", 
-      description: "Developed with manufacturers and designers to handle high-variety custom orders",
-      icon: <Monitor />
-    },
-    {
-      title: "Competitive Edge",
-      description: "Enable faster, adaptable production to compete with offshore manufacturing", 
-      icon: <Database />
-    }, 
-  ],
-    title:<>revolutionizing furniture manufacturing with the first upholstery robot</>,
-    description: <><b>the first automation system</b> to eliminate manual upholstering stretching, gluing, and tacking</>,
+      },
+      {
+        title: "Competitive Edge",
+        description: "Enable faster, adaptable production to compete with offshore manufacturing",
+        icon: <Database />
+      },
+    ],
+    title: <>revolutionizing furniture manufacturing with the first upholstery robot</>,
+    description: <>automating fabric stretching, gluing, and stapling to create safer, engaging jobs while reducing lead times</>,
   },
 
   testimonials: {
@@ -187,32 +183,62 @@ export const config: Config = {
       {
         name: "Oliver Davila Chasan, Founder",
         image: "/team/oliver.png",
-        quote: "Deep Tech investing @ HAX\nVC investing @ Triatomic\nBA Economics @ NYU",
+        quote: [
+          "Deep Tech investing @ HAX",
+          "VC investing @ Triatomic",
+          "BA Economics @ NYU"
+        ].join("\n"),
         company: "Business Development"
       },
       {
         name: "David Michael Faes, Founder",
         image: "/team/david.png",
-        quote: "AI/ML @ Lockheed Martin\nFirst employee @ Silana Robotics\nBA Computer Science @ Columbia",
+        quote: [
+          "AI/ML @ Lockheed Martin",
+          "First employee @ Silana Robotics",
+          "BA Computer Science @ Columbia"
+        ].join("\n"),
         company: "Product Development"
       },
       {
         name: "Alison Bartsch, PhD",
         image: "/team/alison.png",
-        quote: "Researcher @ CMU, Mechanical AI, Stanford Autonomous Labs\nPhD Mech E @ Carnegie Mellon\n14 articles on Deformable Materials",
+        quote: [
+          "Researcher @ CMU, Mechanical AI, Stanford Autonomous Labs",
+          "PhD Mech E @ Carnegie Mellon",
+          "14 articles on Deformable Materials"
+        ].join("\n"),
         company: "Robotics/AI Engineer"
       },
       {
         name: "Jordan Zeeb, MSc",
         image: "/team/jordan.png",
-        quote: "Mechatronics @ GoogleX, Zebra\nR&D Engineer @ SandboxAQ\nMSc Robotics @ Northwestern U",
+        quote: [
+          "Mechatronics @ GoogleX, Zebra",
+          "R&D Engineer @ SandboxAQ",
+          "MSc Robotics @ Northwestern U"
+        ].join("\n"),
         company: "Mechatronics Engineer"
       },
       {
         name: "Kyle Cash",
         image: "/team/kyle.png",
-        quote: "Consultant @ K9Kyle\nBSc Mech E @ Columbia\nBA Physics @ Adelphi",
+        quote: [
+          "Consultant @ K9Kyle",
+          "BSc Mech E @ Columbia",
+          "BA Physics @ Adelphi"
+        ].join("\n"),
         company: "Mechanical Engineer"
+      },
+      {
+        name: "Richie Xue",
+        image: "/team/richie.jpeg",
+        quote: [
+          "Software @ CUAUV",
+          "AI/ML @ Google",
+          "Computer Science & Operations Research @ Cornell"
+        ].join("\n"),
+        company: "Robotics/Software Engineer"
       }
     ],
     title: "Kathedra's Team",

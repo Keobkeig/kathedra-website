@@ -5,8 +5,8 @@ import Image from 'next/image'
 export function Companies() {
   return (
    
-    <section className="opacity-90 pb-4 pt-16 md:pb-32">
-                        <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-4xl grid-cols-4 gap-x-12 gap-y-12 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
+    <section className="opacity-90  md:pb-32">
+                        <div className="group-hover:blur-xs mx-auto grid max-w-4xl grid-cols-4 gap-x-12 gap-y-12 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
                             <div className="flex">
                                 <Image
                                     className="mx-auto h-12 w-auto"

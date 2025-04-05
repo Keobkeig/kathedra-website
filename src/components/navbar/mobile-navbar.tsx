@@ -35,7 +35,7 @@ export default function MobileNavbar() {
   return (
     <div
       className={cn(
-        "top-0 fixed inset-x-0 md:hidden w-full transition-all duration-500 ease-in-out z-50",
+        "top-0 sticky md:hidden w-full transition-all duration-500 ease-in-out z-50",
         hasScrolled && "bg-black bg-opacity-20 backdrop-blur-xl"
       )}
     >
@@ -47,7 +47,7 @@ export default function MobileNavbar() {
       >
         <div className="flex items-center gap-2">
           <motion.span className={cn(hasScrolled && "")} id="companyName">
-            <span className="text-2xl"> 
+            <span className="text-xl"> 
               Build with{" "}
               <motion.span className="font-bold not-italic">
                 {config.name}
