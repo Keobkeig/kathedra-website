@@ -1,6 +1,11 @@
 // Types
 import { ReactNode } from "react";
-import { Laptop, Monitor, Database } from "lucide-react";
+import Worker from '@/components/icons/worker'
+import Medical from '@/components/icons/medical'
+import Ship from '@/components/icons/ship'
+import Money from '@/components/icons/money'
+import Briefcase from '@/components/icons/briefcase'
+import Target from '@/components/icons/target'
 export type SocialLink = {
   url: string;
   ariaLabel: string;
@@ -39,6 +44,7 @@ export interface Project {
 export interface Problem {
   title: string;
   description: string;
+  icon: ReactNode;
 }
 
 
@@ -95,7 +101,7 @@ export type Config = {
 
 // Configuration
 export const config: Config = {
-  name: "Kathedra",
+  name: "K A T H E D R A",
   contactEmail: "ochasan@kathedra.co",
   hero: {
     title: "making the first upholstering robot",
@@ -143,14 +149,17 @@ export const config: Config = {
       {
         title: "Global Labor Shortage",
         description: "80% of manufacturers can't find enough workers.",
+        icon: <Worker className="size-6" />
       },
       {
         title: "Physically Strenuous Work",
         description: "48 percent of Gen Z workers intend to leave within three to six months, citing physical stress.",
+        icon: <Medical className="size-6" />
       },
       {
         title: "Supply Chain Disruption",
         description: "50% tariffs on furniture imports",
+        icon: <Ship className="size-6" />
       },
     ],
     title: "Industry Challenges",
@@ -159,19 +168,19 @@ export const config: Config = {
   skills: {
     items: [
       {
-        title: "Purpose-Built Solution",
-        description: "Developed with manufacturers and designers to handle high-variety custom orders",
-        icon: <Monitor />
+        title: "Better Jobs",
+        description: "Robotic manipulation of fabric reduces physical strain allowing workers to focus on creative aspects of their work.​",
+        icon: <Briefcase className="size-6" />
       },
       {
-        title: "AI-Driven Automation",
-        description: "Computer vision and deep learning predict fabric behavior, adapting to new materials and designs in real-time",
-        icon: <Laptop />
+        title: "Cut Costs",
+        description: "Deep learning models predict fabric behavior, enabling automation for a high variety of materials and designs.​",
+        icon: <Money className="size-6" />
       },
       {
         title: "Competitive Edge",
         description: "Enable faster, adaptable production to compete with offshore manufacturing",
-        icon: <Database />
+        icon: <Target className="size-6" />
       },
     ],
     title: <>revolutionizing furniture manufacturing with the first upholstery robot</>,
@@ -184,8 +193,8 @@ export const config: Config = {
         name: "Oliver Davila Chasan, Founder",
         image: "/team/oliver.png",
         quote: [
-          "Deep Tech investing @ HAX",
-          "VC investing @ Triatomic",
+          "Deep Tech Investing @ HAX",
+          "VC Investing @ Triatomic",
           "BA Economics @ NYU"
         ].join("\n"),
         company: "Business Development"
@@ -195,7 +204,7 @@ export const config: Config = {
         image: "/team/david.png",
         quote: [
           "AI/ML @ Lockheed Martin",
-          "First employee @ Silana Robotics",
+          "Systems Engineering @ MIT xPro",
           "BA Computer Science @ Columbia"
         ].join("\n"),
         company: "Product Development"
@@ -204,9 +213,9 @@ export const config: Config = {
         name: "Alison Bartsch, PhD",
         image: "/team/alison.png",
         quote: [
-          "Researcher @ CMU, Mechanical AI, Stanford Autonomous Labs",
+          "Research @ CMU MAIL, Stanford ASL",
           "PhD Mech E @ Carnegie Mellon",
-          "14 articles on Deformable Materials"
+          "BS Aeronautics @ Stanford"
         ].join("\n"),
         company: "Robotics/AI Engineer"
       },
@@ -236,7 +245,7 @@ export const config: Config = {
         quote: [
           "Software @ CUAUV",
           "AI/ML @ Google",
-          "Computer Science & Operations Research @ Cornell"
+          "CS & Operations @ Cornell"
         ].join("\n"),
         company: "Robotics/Software Engineer"
       }
@@ -245,9 +254,9 @@ export const config: Config = {
     subtitle: "Meet our talented team of experts"
   },
 contact: {
-  title: "Interested in our products?",
-  subtitle: "Let's talk about how we can help you",
-  buttonText: "Contact Me",
+  title: "Build the future with us",
+  subtitle: "Reach out to learn more or join the revolution.u",
+  buttonText: "Contact Us",
   buttonLink: "mailto:info@kathedra.co"
 }
 };

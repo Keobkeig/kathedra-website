@@ -48,7 +48,7 @@ export default function MobileNavbar() {
         <div className="flex items-center gap-2">
           <motion.span className={cn(hasScrolled && "")} id="companyName">
             <span className="text-xl"> 
-              Build with{" "}
+              {" "}
               <motion.span className="font-bold not-italic">
                 {config.name}
               </motion.span>
@@ -91,25 +91,6 @@ export default function MobileNavbar() {
                   </motion.ul>
                 </div>
 
-                <div className="flex flex-col justify-center gap-4 mt-8 w-full">
-                  <Button className="rounded-full max-w-[300px] text-xl py-6"> {/* increased text and padding */}
-                    Book a Call <Phone className="size-6" /> {/* increased icon size */}
-                  </Button>
-
-                  {/* <span
-                    className="bg-transparent w-fit text-foreground text-xs"
-                    onClick={toggleTheme}
-                  >
-                    Change Theme{" "}
-                    <div className="inline-block px-2 p-1 border rounded-full w-fit h-fit">
-                      {theme === "dark" ? (
-                        <Sun className="inline size-4" />
-                      ) : (
-                        <Moon className="inline size-4" />
-                      )}
-                    </div>
-                  </span> */}
-                </div>
               </div>
             </DrawerContent>
           </Drawer>

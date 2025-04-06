@@ -21,7 +21,7 @@ export const Experience = () => {
                             <p className="text-sm text-white/60 mb-4">
                                 {experience.startDate} - {experience.endDate}
                             </p>
-                            <p className="text-sm mb-3">{experience.description}</p>
+<p className="text-sm mb-3 whitespace-pre-line">{experience.description}</p>
                             <div className="flex flex-wrap gap-2">
                                 {experience.tags?.map((tag, tagIndex) => (
                                     <span 

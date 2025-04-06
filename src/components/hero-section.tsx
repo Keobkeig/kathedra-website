@@ -1,14 +1,4 @@
-import React from 'react'
-import Link from 'next/link'
-import { ArrowRight, ChevronRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
-
-
-
-import { AnimatedGroup } from './ui/animated-group'
-import { TextEffect } from './ui/text-effect'
-import { config } from '@/config'
+import React, { useEffect, useState } from 'react'
 import RobotArm from './robot-arm'
 
 const transitionVariants = {
@@ -32,6 +22,30 @@ const transitionVariants = {
 }
 
 export default function HeroSection() {
+    const [key, setKey] = useState(0);
+    const [isVisible, setIsVisible] = useState(true);
+
+    useEffect(() => {
+        const checkRobotArm = () => {
+            const robotArm = document.querySelector('#robot-arm');
+            if (!robotArm && isVisible) {
+                setIsVisible(false);
+            
+                setTimeout(() => {
+                    setKey(prev => prev + 1);
+                    setIsVisible(true);
+                }, 1000);
+            }
+        };
+
+        // Check initially and set up an observer
+        checkRobotArm();
+        const observer = new MutationObserver(checkRobotArm);
+        observer.observe(document.body, { childList: true, subtree: true });
+
+        return () => observer.disconnect();
+    }, [isVisible]);
+
     return (
         <>
             <main className="overflow-hidden h-screen w-screen">

@@ -34,8 +34,7 @@ export default function Team() {
                                         </div>
                                     </div>
 
-                                    <p className={`text-muted-foreground ${index === 0 ? "text-lg" : "text-base"}`}>{testimonial.quote}</p> {/* Added muted color, adjusted size */}
-                                </blockquote>
+                                <p className={`text-muted-foreground whitespace-pre-line ${index === 0 ? "text-lg" : "text-base"}`}>{testimonial.quote}</p>                                 </blockquote>
                             </CardContent>
                         </Card>
                     ))}

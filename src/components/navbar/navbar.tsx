@@ -157,7 +157,8 @@ export default function Navbar() {
               id="companyLogo"
             >
               <img
-                src="/kathedra_logo.jpeg"
+                src="/kathedralogo.svg"
+                style={{ backgroundColor: 'white' }}
                 alt="Kathedra Logo"
                 className="w-full h-full object-cover"
               />
@@ -166,7 +167,7 @@ export default function Navbar() {
 
           <motion.span className={cn(isCompressed && "")} id="companyName">
             <span className="text-2xl"> 
-              Build with{" "}
+              {" "}
               <motion.span className="font-bold not-italic">
                 {config.name}
               </motion.span>
