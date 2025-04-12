@@ -204,7 +204,7 @@ export const config: Config = {
   },
 contact: {
   title: "Build the future with us",
-  subtitle: "Reach out to learn more or join the revolution.u",
+  subtitle: "Reach out to learn more or join the revolution.",
   buttonText: "Contact Us",
   buttonLink: "mailto:info@kathedra.co"
 }
