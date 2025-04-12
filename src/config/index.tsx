@@ -17,30 +17,6 @@ export type SocialLinks = {
   // Extendable - add more social links here as needed
 };
 
-export interface Project {
-  title: string;
-  oneLiner?: string;
-  subtitle: string;
-  description: string | ReactNode;
-  bullets: ReactNode[];
-  date?: string;
-  image?: string | null;
-  tags?: string[];
-  slug?: string;
-  company?: string;
-  link?: {
-    label: string;
-    href: string;
-  };
-  // Experience-specific fields
-  position?: string;
-  location?: string;
-  type?: "fulltime" | "contract" | "internship" | "freelance";
-  startDate?: string;
-  endDate?: string;
-  isPersonalProject?: boolean;
-}
-
 export interface Problem {
   title: string;
   description: string;
@@ -77,7 +53,6 @@ export type Config = {
     backgroundImage?: string;
   };
   social: SocialLinks;
-  projects: Project[];
   problems: {
     items: Problem[];
     title: string;
@@ -118,32 +93,6 @@ export const config: Config = {
       ariaLabel: "LinkedIn",
     },
   },
-  projects: [
-    {
-      title: "iPhone Web App",
-      oneLiner: "It's a revolutionary mobile web browser!",
-      subtitle: "Lead Developer & CEO",
-      description: "Created the world's first mobile web browser that actually works. No Flash needed!",
-      bullets: [
-        // "Convinced everyone that pinch-to-zoom was totally my idea",
-        // "Implemented the 'magical' scroll bounce effect using CSS",
-        // "Refused to add a back button because users don't need choices",
-        // "Spent 6 months perfecting the border radius of buttons"
-      ],
-      company: "Apple Inc.",
-      image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3",
-      tags: ["JavaScript", "CSS", "Innovation", "Reality Distortion"],
-      position: "Chief Code Wizard",
-      location: "Cupertino, CA",
-      type: "fulltime",
-      startDate: "2007",
-      endDate: "2011",
-      link: {
-        label: "View Project",
-        href: "https://www.apple.com/iphone"
-      }
-    },
-  ],
   problems: {
     items: [
       {

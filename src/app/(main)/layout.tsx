@@ -8,7 +8,6 @@ import localFont from "next/font/local";
 import "../globals.css";
 import Navbar from "@/components/navbar/navbar";
 import MobileNavbar from "@/components/navbar/mobile-navbar";
-import Footer from "@/components/footer";
 import { Analytics } from "@vercel/analytics/react"
 
 import { config } from "@/config";
@@ -18,7 +17,7 @@ const exo = localFont({
 });
 
 export const metadata: Metadata = {
-  title: `${config.name} | ${config.hero.subtitle}`,
+  title: `${"Kathedra"} | ${config.hero.subtitle}`,
   description:
     "Automating the future of luxury furniture manufauturing with robotics",
 };

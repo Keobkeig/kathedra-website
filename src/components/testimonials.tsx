@@ -29,7 +29,7 @@ export default function Team() {
                                         <div>
                                             <cite className="font-bold not-italic">{testimonial.name}</cite>
                                             {testimonial.company && (
-                                                <span className="text-foreground block font-bold not-italic">{testimonial.company}</span>
+                                                <span className="text-foreground block not-italic">{testimonial.company}</span>
                                             )}
                                         </div>
                                     </div>
